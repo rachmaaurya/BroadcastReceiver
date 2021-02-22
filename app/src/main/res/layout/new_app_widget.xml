@@ -1,7 +1,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="?attr/appWidgetBackgroundColor"
+    android:background="@android:color/holo_blue_dark"
     android:padding="@dimen/widget_margin"
     android:theme="@style/ThemeOverlay.BroadcastReceiver.AppWidgetContainer">
 
@@ -71,8 +71,11 @@
             android:text="X"/>
     </LinearLayout>
     <Button
+        android:background="@drawable/button1"
+        android:textColor="#ffff"
+        android:layout_margin="10dp"
         android:id="@+id/button_update"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/section_update"
         android:layout_centerHorizontal="true"
