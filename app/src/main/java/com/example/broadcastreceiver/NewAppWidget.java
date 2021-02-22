@@ -22,8 +22,10 @@ public class NewAppWidget extends AppWidgetProvider {
         SharedPreferences prefs=context.getSharedPreferences(SHARED_PREF_FILE, 0);
         int count = prefs.getInt(COUNT_KEY+appWidgetId, 0);
         count++;
-        String dateString = DateFormat.getDateInstance(DateFormat.LONG).format(new Date());
-        String timeString = DateFormat.getTimeInstance(DateFormat.SHORT).format(new Date());
+        String dateString = DateFormat.getDateInstance(DateFormat.LONG)
+                .format(new Date());
+        String timeString = DateFormat.getTimeInstance(DateFormat.SHORT)
+                .format(new Date());
 
         // Construct the RemoteViews object
         RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.new_app_widget);
